@@ -1,13 +1,8 @@
 # Travis CI Configuration file
 # @link https://travis-ci.org/
 
-# ShellCheck is installed
-addons:
-  apt:
-    sources:
-    - debian-sid
-    packages:
-    - shellcheck
+# Using shell for the project
+language: shell
 
 script:
   # Validates the included scripts
