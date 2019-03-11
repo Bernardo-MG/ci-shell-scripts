@@ -33,9 +33,9 @@ if [ "${deploy}" == "true" ]; then
 
    if [ -n "${profile}" ]; then
       echo "Using profile ${profile}"
-      mvn deploy -P "${profile}" --settings ~/settings.xml
+      mvn deploy -B -P "${profile}" --settings ~/settings.xml
    else
-      mvn deploy --settings ~/settings.xml
+      mvn deploy -B --settings ~/settings.xml
    fi
 
    exit 0
