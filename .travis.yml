@@ -3,13 +3,6 @@
 
 # Using shell for the project
 language: shell
-# ShellCheck is installed
-addons:
-  apt:
-    sources:
-    - debian-sid
-    packages:
-    - shellcheck
 
 script:
   # Validates the included scripts
